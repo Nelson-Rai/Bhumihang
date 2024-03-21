@@ -9,7 +9,7 @@ export default function Skills() {
         <h1>MY SKILLS</h1>
         </div>
         <div className="text-justify">
-        <p>With a keen focus on Python with Django development, I excel in crafting dynamic web applications, proficiently managing databases, and implementing robust security measures. My expertise extends to front-end technologies like HTML, CSS (including Bootstrap & Tailwind CSS), and JavaScript (including React JS), enabling the creation of visually appealing and interactive user interfaces. My proficiency in RESTful APIs facilitates seamless communication between different components of web applications.
+        <p>&emsp; With a keen focus on Python with Django development, I excel in crafting dynamic web applications, proficiently managing databases, and implementing robust security measures. My expertise extends to front-end technologies like HTML, CSS (including Bootstrap & Tailwind CSS), and JavaScript (including React JS), enabling the creation of visually appealing and interactive user interfaces. My proficiency in RESTful APIs facilitates seamless communication between different components of web applications.
           </p>
           </div>
           <span>HTML5</span>

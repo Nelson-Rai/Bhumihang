@@ -1,4 +1,8 @@
 import React from 'react'
+import Work1 from './works/Work1'
+import Work2 from './works/Work2'
+import Work3 from './works/Work3'
+import Work4 from './works/Work4'
 
 export default function Work() {
   
@@ -11,75 +15,19 @@ export default function Work() {
           </div>
         
           <section className="py-2">
-        <div className="container d-flex row justify-content-between">
+        <div className="container d-flex row">
         <div className=" my-1 col-sm-6 col-md-3" >
-            <div className="card mx-1 cardStyle">
-            <img
-              src="assets/card1.jpg"
-              className="card-img-top img-fluid"
-              alt="Software Image..."
-            />
-            <div className="card-body">
-              <span>Software</span>
-              <p className="card-text text-justify">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-                <a href="" className="btn btn-link">more</a>
-              </p>
-            </div>
-            </div>
+            <Work1/>
           </div>
           <div className=" my-1 col-sm-6 col-md-3" >
-            <div className="card mx-1 cardStyle">
-            <img
-              src="assets/card2.jpg"
-              className="card-img-top img-fluid"
-              alt="Website Development.."
-            />
-            <div className="card-body">
-              <span>Website Development</span>
-              <p className="card-text text-justify">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-                <a href="" className="btn btn-link">more</a>
-              </p>
-            </div>
-            </div>
+            <Work2/>
+          </div>
+          {/* <div className=" my-1 col-sm-6 col-md-3" >
+            <Work3/>
           </div>
           <div className=" my-1 col-sm-6 col-md-3" >
-            <div className="card mx-1 cardStyle">
-            <img
-              src="assets/card3.jpg"
-              className="card-img-top img-fluid"
-              alt="Application Development.."
-            />
-            <div className="card-body">
-              <span>Application Development</span>
-              <p className="card-text text-justify">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-                <a href="" className="btn btn-link">more</a>
-              </p>
-            </div>
-          </div>
-          </div>
-          <div className=" my-1 col-sm-6 col-md-3" >
-            <div className="card mx-1 cardStyle">
-            <img
-              src="assets/card2.png"
-              className="card-img-top img-fluid"
-              alt="Web Design.."
-            />
-            <div className="card-body">
-              <span>Web Design</span>
-              <p className="card-text text-justify">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-                <a href="" className="btn btn-link">more</a>
-              </p>
-            </div>
-          </div>
-          </div>
+            <Work4/>
+          </div> */}
         </div>
       </section>
       </div>

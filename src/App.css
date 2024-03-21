@@ -61,6 +61,9 @@ margin-left: 10px;
 .text-justify{
   text-align: justify;
 }
+.card-img{
+  height: 1rem;
+}
 @media only screen and (max-width: 1200px){
   .textInfo{
     text-align: justify;
