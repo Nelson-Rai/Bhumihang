@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nelson-Rai/Portfolio/static/css/main.f0bf3cb6.css",
+    "main.js": "/Nelson-Rai/Portfolio/static/js/main.9b619324.js",
+    "static/js/453.acca0757.chunk.js": "/Nelson-Rai/Portfolio/static/js/453.acca0757.chunk.js",
+    "index.html": "/Nelson-Rai/Portfolio/index.html",
+    "main.f0bf3cb6.css.map": "/Nelson-Rai/Portfolio/static/css/main.f0bf3cb6.css.map",
+    "main.9b619324.js.map": "/Nelson-Rai/Portfolio/static/js/main.9b619324.js.map",
+    "453.acca0757.chunk.js.map": "/Nelson-Rai/Portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0bf3cb6.css",
+    "static/js/main.9b619324.js"
+  ]
+}
