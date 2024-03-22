@@ -1,6 +1,31 @@
-import React from 'react'
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 export default function Contact() {
+  const form = useRef();
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_dsry8hj', 'template_a8eahkv', form.current, {
+        publicKey: 'DjkuIucgghxnlHcFg',
+      })
+      .then(
+        () => {
+          setSuccessMessage('Email sent successfully!');
+          setErrorMessage('');
+        },
+        (error) => {
+          setErrorMessage(error.text);
+          setSuccessMessage('');
+        },
+      );
+  };
+
   return (
     <>
     <div className='container p-4' id='contact'>
@@ -9,22 +34,35 @@ export default function Contact() {
         <h1>CONTACT</h1>
     </div>
     <div className="d-flex row">
-      <form className="row g-3 col-md-6">
+      <form className="row g-3 col-md-6" ref={form} onSubmit={sendEmail}>
+        <div className="">
+        {successMessage ?(
+          alert(successMessage)
+        ):null}
+        {errorMessage ?(
+          alert(errorMessage)
+        ):null}
+          {/* Success message */}
+      {/* {successMessage && <Alert variant="success">{successMessage}</Alert>} */}
+      
+      {/* Error message */}
+      {/* {errorMessage && <Alert variant="danger">{errorMessage}</Alert>} */}
+        </div>
       <div className="col-md-6">
-    <label htmlFor="fullname" className="form-label">Full Name</label>
-    <input type="text" className="form-control" id="fullname"/>
+    <label htmlFor="user_name" className="form-label">Full Name</label>
+    <input type="text" className="form-control" id="user_name" name='user_name' required/>
   </div>
   <div className="col-md-6">
-    <label htmlFor="inputEmail4" className="form-label">Email</label>
-    <input type="email" className="form-control" id="inputEmail4"/>
+    <label htmlFor="user_email" className="form-label">Email</label>
+    <input type="email" className="form-control" id="user_email" name='user_email' required/>
   </div>
   <div className="col-12">
     <label htmlFor="subject" className="form-label">Subject</label>
-    <input type="text" className="form-control" id="subject" placeholder="subject.."/>
+    <input type="text" className="form-control" id="subject" name='subject' placeholder="subject.." required/>
   </div>
   <div className="col-12">
     <label htmlFor="message" className="form-label">Message</label>
-    <textarea name="message" className="form-control" id="" cols="30" rows="6"></textarea>
+    <textarea name="message" className="form-control" id="" cols="30" rows="6" required></textarea>
     
   </div>
   <div className="col-12">
